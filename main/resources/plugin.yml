@@ -1,0 +1,4 @@
+name: Azu2
+version: '${project.version}'
+main: azu1.azu1.Azu2
+api-version: 1.18
