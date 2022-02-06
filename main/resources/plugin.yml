@@ -2,3 +2,15 @@ name: Azu2
 version: '${project.version}'
 main: azu1.azu1.Azu2
 api-version: 1.18
+
+commands:
+  azuheal:
+    description: テストヒール
+    permission: Azu2.permission.Member
+
+
+permissions:
+  Azu2.permission.Admin:
+    default: op
+  Azu2.permission.Member:
+    default: true
