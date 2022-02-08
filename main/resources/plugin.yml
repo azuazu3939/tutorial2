@@ -6,11 +6,19 @@ api-version: 1.18
 commands:
   azuheal:
     description: テストヒール
-    permission: Azu2.permission.Member
+    permission: Azu2.permission.azuheal
+  azubroadcast:
+    description: テストブロードキャスト
+    permission: Azu2.permission.azubroadcast
+  azuloc:
+    description: テストロケ
+    permission: Azu2.permission.azuloc
 
 
 permissions:
   Azu2.permission.Admin:
     default: op
-  Azu2.permission.Member:
-    default: true
+    children:
+      Azu2.permission.azuheal: true
+      Azu2.permission.azubroadcast: true
+      Azu2.permission.azuloc: true
